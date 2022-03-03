@@ -1,38 +1,123 @@
 .App {
-  text-align: center;
+	text-align: center;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.order-summary-component {
+	display: flex;
+	flex-direction: column;
+	height: 75vh;
+	width: 400px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px var(--DesaturatedBlue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.order-summary-component-image {
+	height: 40%;
+	width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.order-summary-component-image img {
+	width: 400px;
+	border-radius: 10px 10px 0px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.order-summary-details {
+	margin: 5% 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.osd-title {
+	margin: 0;
+	font-weight: 900;
+}
+
+.osd-desc {
+	font-weight: 500;
+	font-size: 14px;
+	width: 85%;
+	margin: 15px auto;
+	line-height: 1.5;
+}
+
+.osd-plan-change {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--VeryPaleBlue);
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+
+.osd-plan-change-left {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.osd-plan-change-plans {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	margin-left: 15px;
+}
+
+.osd-plan-change-plans-title {
+	font-weight: 700;
+	margin: 0;
+	font-size: 14px;
+}
+.osd-plan-change-plans-price {
+	font-weight: 500;
+	font-size: 13px;
+	margin: 0;
+	color: var(--DesaturatedBlue);
+	text-align: left;
+}
+
+.osd-plan-change-right {
+	font-size: 14px;
+	margin-right: 10px;
+	color: var(--DarkBlue);
+}
+
+.osd-plan-change-right a:hover {
+	color: var(--DesaturatedBlue);
+}
+
+.osd-payment-button {
+	margin: 20px auto 10px auto;
+	height: 40px;
+	background-color: var(--BrightBlue);
+	color: var(--VeryPaleBlue);
+	border-radius: 7px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.osd-payment-button:hover {
+	background-color: var(--DarkBlue);
+}
+
+.osd-cancel-button {
+	height: 40px;
+	color: var(--DesaturatedBlue);
+	border-radius: 7px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.osd-cancel-button:hover {
+	color: var(--DarkBlue);
+}
+
+@media screen and (max-width: 600px) {
 }
